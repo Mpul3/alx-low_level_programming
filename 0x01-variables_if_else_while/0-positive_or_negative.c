@@ -3,8 +3,8 @@
 #include <stdio.h>
 
 /**
- * Main - This program will assign a random number to the variable n each time it is executed
- * Return :0 (Success)
+ * main - Entry point
+ * Return : Always 0
  */
 int main(void)
 {
@@ -12,19 +12,16 @@ int main(void)
 
 	srand(time(0));
 	n = rand() - RAND_MAX / 2;
-		if (n > 0)
-	{ 
-
-			printf("%d is positive\n", n);
-	}
-		else (n = = 0)
+	if (n > 0)
 	{
-			printf("%d is zero\n", n);
+		printf("%d id positive \n", n);
 	}
-		else
+	else if (n == 0)
+	{
+		printf("%d is zero \n", n);
 	}
-			printf("%d is negative\n, n);
-	}
-	Return (0)
+	else
+	{
+		printf("%d is negative \n", n);
+	return (0);
 }
-
